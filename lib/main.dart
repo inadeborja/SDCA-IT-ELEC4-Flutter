@@ -7,8 +7,14 @@ void main() {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Scaffold homepage = Scaffold (
-      appBar:AppBar(title: Text('Homepage'))
+    Scaffold homepage = Scaffold(
+      appBar:AppBar(title: Text('Homepage')),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+
+        },
+        child: const Icon(Icons.add)
+        ),
     );
 
     return MaterialApp(
